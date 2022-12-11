@@ -1,0 +1,121 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/brands.min.css" integrity="sha512-G/T7HQJXSeNV7mKMXeJKlYNJ0jrs8RsWzYG7rVACye+qrcUhEAYKYzaa+VFy6eFzM2+/JT1Q+eqBbZFSHmJQew==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<nav id="navbar-main" class="bg-gradient-success  navbar-main navbar-expand-lg navbar-transparent navbar-light headroom headroom--top headroom--pinned">
+  <div class="" >
+    <a class="navbar-brand "   height="100%"   [routerLink]="['/home']">
+     
+    </a>
+    <button class="navbar-toggler" type="button" (click)="isCollapsed = !isCollapsed"
+          [attr.aria-expanded]="!isCollapsed" aria-controls="navbar_global">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="navbar-collapse collapse" id="navbar_global" [ngbCollapse]="isCollapsed">
+      <div class="navbar-collapse-header">
+        <div class="row">
+          <div class="col-6 collapse-brand">
+            <a [routerLink]="['/home']">
+             
+            </a>
+          </div>
+          <div class="col-6 collapse-close">
+            <button type="button" class="navbar-toggler" (click)="isCollapsed = !isCollapsed"
+                  [attr.aria-expanded]="!isCollapsed" aria-controls="navbar_global">
+              <span></span>
+              <span></span>
+            </button>
+          </div>
+        </div>
+      </div>
+
+
+      <ul class="navbar-nav navbar-nav-hover align-items-lg-center">
+        <a href="">
+        <img src="./assets/img/brand/logo.png" style=" height: 3rem ;width: 9rem; margin-left: 1rem;margin-bottom: 1.2rem;" >
+       </a>
+       
+
+
+       
+      </ul>
+      <ul class="navbar-nav navbar-nav-hover align-items-lg-center" style="margin-right: 9rem;"  >
+        <li class="nav-item dropdown d-lg-block ml-lg-5 " >
+          <a class="nav-link no-caret" data-toggle="dropdown" role="button">
+            <i class="fa-solid fa-book"></i>
+            <span class="nav-link-inner--text  text-light fw-bold">RESOLUCIONES</span>
+          </a>
+          <div class="dropdown-menu">
+            
+            <a [routerLink]="['/home']" class="dropdown-item">Resoluciones</a>
+           
+          </div>
+        </li>
+
+
+        <li class="nav-item dropdown d-lg-block ml-lg-5 ">
+          <a class="nav-link no-caret" data-toggle="dropdown" role="button">
+            <i class="fa-solid fa-globe"></i>
+            <span class="nav-link-inner--text text-light  fw-bold">MUNI CHACLACAYO</span>
+          </a>
+          <div class="dropdown-menu">
+            
+            <a href="https://munichaclacayo.gob.pe/portals/index.html"  class="dropdown-item">Municipalidad De Chaclacayo</a>
+           
+          </div>
+        </li>
+
+
+        <li class="nav-item dropdown d-lg-block ml-lg-5 ">
+          <a class="nav-link no-caret" data-toggle="dropdown" role="button">
+            <i class="fa-regular fa-file-lines"></i>
+            <span class="nav-link-inner--text text-light fw-bold">REQUISITOS</span>
+          </a>
+          <div class="dropdown-menu">
+           
+            <a href="#requisitos" class="dropdown-item">Requisitos</a>
+            
+          </div>
+        </li>
+
+
+
+
+      </ul>
+     
+    
+      <ul class="navbar-nav align-items-lg-center ml-lg-auto">
+       
+
+       <!-- <li class="nav-item d-none d-lg-block ml-lg-5       "  >
+          <div class="form-group" [ngClass]="{'focused':focus1===true}">
+            <div class="input-group input-group-alternative  ">
+              <div class="input-group-prepend">
+                <span class="input-group-text"><i class="fa-solid fa-magnifying-glass"></i></span>
+              </div>
+              <input class="form-control  "  placeholder="Search" type="text" (focus)="focus1=true" (blur)="focus1=false">
+            </div>
+          </div>
+        </li>-->
+
+
+
+       
+        <li class="nav-item d-none d-lg-block ml-lg-5       " style="margin-bottom: 0rem;" >
+          <a [routerLink]="['/register']"  class="btn btn-neutral btn-icon mx-auto">
+            <span class="btn-inner--icon  mb-1">
+              <i class="fa-solid fa-user-plus"></i>
+            </span>
+            <span  class="nav-link-inner--text    col-md-1 ml-md-1 "> RESGISTRATE</span>
+          </a>
+        </li>
+        <li class="nav-item d-none d-lg-block ml-lg-3" style="margin-right: 2rem;margin-bottom: 0rem;">
+          <a [routerLink]="['/login']"  class="btn btn-neutral btn-icon  ">
+            <span class="btn-inner--icon">
+              <i class="fa-solid fa-user  "></i>
+            </span>
+            <span  class="nav-link-inner--text   col-md-1 ml-md-2">   INICIAR SESIÓN   </span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>

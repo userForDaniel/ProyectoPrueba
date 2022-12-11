@@ -1,0 +1,19 @@
+<div class="wrapper">
+  <form class="login">
+    <p class="title" ><img [src]="logo" alt="logo municipalidad chaclacayo" class="rounded mx-auto d-block mt-4 img"><h5 style="color: green; text-align: center;"><b>INGRESO</b></h5></p>
+    <input [(ngModel)]="usuario.username" type="text" placeholder="Username" autofocus/>
+    <i class="fa fa-user"></i>
+    <input type="password" placeholder="Password" [(ngModel)]="usuario.password" />
+    <i class="fa fa-key"></i>
+    <div class="col-12 mb-2">
+      <h6 class="fw-semibold  text-center ">¿Olvidaste tu contraseña? <a
+          >Haz clic aquí</a></h6>
+    </div>
+    <button (click)="iniciarSesion()">
+      <i class="spinner"></i>
+      <span class="state">{{btn}}</span>
+    </button>
+  </form>
+  
+  
+</div>

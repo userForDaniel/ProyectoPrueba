@@ -1,0 +1,163 @@
+<app-navbar></app-navbar>
+
+<main>
+
+
+
+  <div class="jumbotron card card-image"
+  style="background-image: url(https://mdbootstrap.com/img/Photos/Others/gradient12.webp);">
+  <div class="text-white text-center py-5 px-4">
+    <div>
+      <h2 class="card-title h1-responsive pt-3 mb-5 font-bold"><strong>REGISTRA A TU ORGANIZACIÓN SOCIAL</strong></h2>
+      <p class="mx-5 mb-5">
+      </p>
+      <a  [routerLink]="['/register']" class="btn btn-outline-white btn-md"><i class="fas fa-clone left"></i> REGISTRARTE</a>
+      <a [routerLink]="['/login']" class="btn btn-outline-white btn-md"><i class="fas fa-clone left"></i> INICIAR SESIÓN</a>
+    </div>
+  </div>
+</div>
+
+
+
+
+<!-- requisitos -->
+  <div class="container" id="requisitos">
+    <div class="card text-center">
+      <br>
+      <h5 style="color: green;"><b class="fw-bold"> REQUISITOS IMPORTANTES</b></h5>
+      <span class="fw-bold">ESTOS SON LOS DOCUMENTOS NECESARIOS PARA QUE PUEDA REGISTRAR SU ORGANIZACION SOCIAL</span> 
+      <hr>
+
+      <div class="row">
+
+        <div class="col-md-7 ">
+
+          <table class="table table-borderless requisitos">
+            <tbody >
+              <tr >
+                <th scope="row"><i class="fa-solid fa-check-to-slot"></i></th>
+                <td>
+                  <p class="text-start fw-semibold">Solicitud dirigida a la Gerencia de Participación Vecinal.</p>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row"><i class="fa-solid fa-check-to-slot"></i></th>
+                <td>
+                  <p class="text-start fw-semibold">Estatuto y acta de aprobación.</p>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row"><i class="fa-solid fa-check-to-slot"></i></th>
+                <td>
+                  <p class="text-start fw-semibold">Acta de eleción de órgano directivo.</p>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row"><i class="fa-solid fa-check-to-slot"></i></th>
+                <td>
+                  <p class="text-start fw-semibold">Nómina de los miembros de la Organizacion Social.</p>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row"><i class="fa-solid fa-check-to-slot"></i></th>
+                <td>
+                  <p class="text-start fw-semibold ">Nómina de los miembros de la Órgano Directivo.</p>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row"><i class="fa-solid fa-check-to-slot"></i></th>
+                <td>
+                  <p class="text-start fw-semibold">Plano o croquis referencial de la ubicacion del local.</p>
+                </td>
+              </tr>
+
+            </tbody>
+          </table>
+
+
+        </div>
+
+        <div class="col-md-4">
+          <div class="gap-4 col-8 mx-auto">
+
+           <a href="#modelos"> <button class="btn btn-success ms-1 fw-semibold" id="hola" type="button"><i class="fa-solid fa-rectangle-list"></i> Ver
+              modelos de formatos</button></a>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+  
+  <br>
+  <br>
+  <br>
+  <br>
+  <!-- formato -->
+
+  <div class="container mb-5">
+    <div class="card text-center" >
+      <br>
+      <h4 style="color: green;"><b class="fw-bold"> MODELOS DE FORMATOS</b></h4>
+      <hr>
+        
+      <table class="table table-bordered" id="modelos">
+        <thead>
+          <tr>
+            <th scope="col" class="fw-bold">#</th>
+            <th scope="col">Nombre de formato de documento</th>
+            <th scope="col">Modelo referencial</th>
+            <th scope="col">Modelo para rellenar</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td class="fw-semibold">Solicitud para registrar una nueva organización</td>
+            <td><a href="#" class="fw-bold text-danger fs-3"><i class="fa-solid fa-file-pdf"></i></a></td>
+            <td><a href="#" class="fw-bold text-primary fs-3"><i class="fa-solid fa-file-word"></i></a></td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td class="fw-semibold">Solicitud para actualizar una organización</td>
+            <td><a href="#" class="fw-bold text-danger fs-3"><i class="fa-solid fa-file-pdf"></i></a></td>
+            <td><a href="#" class="fw-bold text-primary fs-3"><i class="fa-solid fa-file-word"></i></a></td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td class="fw-semibold">Estatuto y acta de aprobación</td>
+            <td><a href="#" class="fw-bold text-danger fs-3"><i class="fa-solid fa-file-pdf"></i></a></td>
+            <td><a href="#" class="fw-bold text-primary fs-3"><i class="fa-solid fa-file-word"></i></a></td>
+          </tr>
+          <tr>
+            <th scope="row">4</th>
+            <td class="fw-semibold">Acta de elección del órgano directivo</td>
+            <td><a href="./assets/pdf/MODELO_ELECCION_ORGANO_DIRECTIVO.pdf" download="Acta-de-elección-del-órgano-directivo" class="fw-bold text-danger fs-3"><i class="fa-solid fa-file-pdf"></i></a></td>
+            <td><a href="#" class="fw-bold text-primary fs-3"><i class="fa-solid fa-file-word"></i></a></td>
+          </tr>
+          <tr>
+            <th scope="row">5</th>
+            <td class="fw-semibold">Nómina de los miembros de la organización social</td>
+            <td><a href="#" class="fw-bold text-danger fs-3"><i class="fa-solid fa-file-pdf"></i></a></td>
+            <td><a href="#" class="fw-bold text-primary fs-3"><i class="fa-solid fa-file-word"></i></a></td>
+          </tr>
+          <tr>
+            <th scope="row">6</th>
+            <td class="fw-semibold">Nómina de los miembros del órgano directivo</td>
+            <td><a href="#" class="fw-bold text-danger fs-3"><i class="fa-solid fa-file-pdf"></i></a></td>
+            <td><a href="#" class="fw-bold text-primary fs-3"><i class="fa-solid fa-file-word"></i></a></td>
+          </tr>
+          <tr>
+            <th scope="row">7</th>
+            <td class="fw-semibold">Plano o croquis referencial de la ubicación del local</td>
+            <td><a href="#" class="fw-bold text-danger fs-3"><i class="fa-solid fa-file-pdf"></i></a></td>
+            <td><a href="#" class="fw-bold text-primary fs-3"><i class="fa-solid fa-file-word"></i></a></td>
+          </tr>
+        </tbody>
+      </table>
+
+      </div>
+      </div>
+
+</main>
